@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #32c8ff 0%, #549bff 51%, #c38cff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  font-family: "Open Sans";
+}
+
+nav {
+  position: fixed;
+  height: 60px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  flex-flow: row-reverse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+nav a {
+  display: block;
+  line-height: 60px;
+  flex: 0 0 auto;
+  border-left: 1px solid #AAD3E8;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Shadows Into Light";
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 100px;
+}
+
+div.bubbleContainer {
+  position: relative;
+  width: 60vw;
+  height: 350px;
+  margin: 50px auto 0;
+}
+div.bubbleContainer div.bubbleBody, div.bubbleContainer::after {
+  position: absolute;
+}
+div.bubbleContainer div.bubbleBody {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+div.bubbleContainer div.bubbleBody form {
+  padding: 30px;
+  box-sizing: border-box;
+}
+div.bubbleContainer div.bubbleBody form * {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #0D3544;
+  padding: 10px;
+  box-sizing: border-box;
+}
+div.bubbleContainer div.bubbleBody form input {
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+div.bubbleContainer div.bubbleBody form textarea {
+  height: 180px;
+  resize: none;
+}
+div.bubbleContainer::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  top: 300px;
+  left: 80px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid white;
+}
+
+button.btnSendMessage {
+  width: 300px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 3px solid white;
+  outline: none;
+  border-radius: 12px;
+  font-size: 30px;
+  font-family: "Shadows Into Light";
+  color: white;
+  cursor:pointer;
+}
+
+ul.messageList {
+  width: 80vw;
+  margin: 50px auto;
+  font-family: "Open Sans";
+}
+ul.messageList li.message {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 20px;
+  list-style: none;
+}
+ul.messageList li.message p.messageTitle {
+  font-family: 微軟正黑體;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+ul.messageList li.message p.messageContent {
+  margin-left: 25px;
+  font-family: 微軟正黑體;
+  line-height: 24px;
+}

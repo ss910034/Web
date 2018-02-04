@@ -1,0 +1,20 @@
+/*.dd
+{
+	width : 120 em;
+}*/
+/*.d
+{
+	width:120em;
+	
+}*/
+.ta
+{
+	table-layout: fixed;
+	word-wrap:break-word;
+}
+img
+{
+	max-width: 120px; 
+	width:expression(this.width > 120 ? "120px" : this.width);
+	overflow:hidden;
+}
